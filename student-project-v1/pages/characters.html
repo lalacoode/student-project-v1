@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/characters.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="row">
+        <div class="col-4">
+          <div id="logo" class="p-5 format">
+            <img
+              src="https://p325k7wa.twic.pics/high/elden-ring/elden-ring/00-page-setup/eldenring_new.png?twic=v1/resize=1020/step=10/quality=80"
+              alt="Elden Ring"
+            />
+          </div>
+        </div>
+        <div class="col-8">
+          <nav class="p-5">
+            <ul>
+              <li><a href="../index.html">Inicio</a></li>
+              <li><a href="history.html">Historia</a></li>
+              <li><a href="characters.html">Personajes</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="container">
+      <section>
+        <div class="row text-center">
+          <div class="col-12"><h2>Personajes</h2></div>
+          <div class="col-6"><h3>Hero</h3></div>
+          <div class="col-6"><h3>Bandit</h3></div>
+        </div>
+        <div class="row">
+          <div class="col-12 text-center"><h2>Escoge</h2></div>
+          <form action="characters.html" method="post" class="text-left">
+            <ul>
+              <li>
+                <label for="atr">Atributos:</label>
+                <select name="atributos" id="atr">
+                  <option value="vigor">Vigor</option>
+                  <option value="mente">Mente</option>
+                  <option value="fuerza">Fuerza</option>
+                  <option value="destreza">Destreza</option>
+                  <option value="inteligencia">Inteligencia</option>
+                  <option value="fe">Fe</option>
+                  <option value="arcano">Arcano</option>
+                  <option value="aguante">Aguante</option>
+                </select>
+              </li>
+
+              <li>
+                <label for="est">Estilo:</label>
+                <select name="estilo" id="est">
+                  <option value="cuerpo">Cuerpo a cuerpo</option>
+                  <option value="distancia">Con distancia</option>
+                  <option value="medio">Cerca o con distancia</option>
+                </select>
+              </li>
+
+              <li>
+                <label for="fecha">Fecha de nacimiento:</label>
+                <input type="date" id="date" name="user_date" />
+              </li>
+              <li class="remove-point">
+                <input type="submit" name="enviar" value="enviar datos" />
+              </li>
+              <li>
+                <label for="rsp">Respuesta:</label>
+                <textarea id="rsp" name="user_answer"></textarea>
+              </li>
+            </ul>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="row">
+        <div class="col-3">
+          <ul class="icons-position remove-point">
+            <li><img src="../assets/icons/envelope-solid.svg" alt="hola" /></li>
+            <li><img src="../assets/icons/square-github.svg" alt="icono" /></li>
+          </ul>
+        </div>
+        <div class="col-9 text-right">Axelle Bezit</div>
+      </div>
+    </footer>
+  </body>
+</html>

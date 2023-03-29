@@ -1,0 +1,80 @@
+@import url(utilities.css);
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-image: url(../assets/images/image.jpg);
+  background-size: cover;
+}
+
+main {
+  color: bisque;
+}
+
+nav ul li a {
+  color: bisque;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: end;
+}
+
+nav ul li:nth-child(2) {
+  margin-inline: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li:nth-child(2) {
+    margin-inline: 0;
+  }
+}
+
+footer {
+    background-color: currentColor;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li:nth-child(2) {
+    margin-inline: 0;
+  }
+}
+/*cambiar a clase*/
+.col-3 ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.icons-position li img {
+  width: 30px;
+  padding-inline: 10px;
+  margin: auto;
+}
+
+form ul li {
+  padding: 10px;
+}
+
+.line {
+  border-bottom: black;
+}
